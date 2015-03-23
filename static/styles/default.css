@@ -14,7 +14,7 @@ body {
 
 header {
   background: #333;
-  color: #33b5E5;
+  color: #ece60f;
   padding-left: 20px;
   padding-right: 20px;
   height: 200px;
@@ -44,12 +44,12 @@ header img {
 
 @media all and (max-width: 420px) {
   header h1 {
-    padding-left: 40%;
-    font-size: 34px;
+    padding-left: 50%;
+    font-size: 30px;
   }
 
   header img {
-    left: -10px;
+    left: 10px;
   }
 }
 
@@ -86,7 +86,7 @@ article p {
 #content h1 {
   font-size: 24px;
   margin-bottom: 15px;
-  color: #ece60f;
+  color: #07205a;
 }
 
 #content h2 {
