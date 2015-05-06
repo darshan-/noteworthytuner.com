@@ -1,9 +1,12 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 )
+
+const PORT = 8090
 
 const faqURL = "https://github.com/darshan-/Noteworthy-Tuner-Support/blob/master/FAQ.wiki"
 const changelogURL = "https://github.com/darshan-/Noteworthy-Tuner-Support/blob/master/Changelog.md"
@@ -16,7 +19,7 @@ func main() {
 
 	http.Handle("/", http.FileServer(http.Dir("./static/")))
 
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%v", PORT), nil))
 }
 
 func makeRedirect(url string) http.HandlerFunc {
