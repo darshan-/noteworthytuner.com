@@ -3,7 +3,7 @@ Description=Noteworthy Tuner Website
 After=syslog.target network.target
 
 [Service]
-ExecStart=/usr/bin/sudo -i -u darshan /home/darshan/bin/run-noteworthy
+ExecStart=/usr/bin/sudo -i -u darshan /home/darshan/bin/run-noteworthy-site
 
 [Install]
 WantedBy=multi-user.target
