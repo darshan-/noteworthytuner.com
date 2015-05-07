@@ -3,7 +3,10 @@ Description=Noteworthy Tuner Website
 After=syslog.target network.target
 
 [Service]
-ExecStart=/usr/bin/sudo -i -u darshan /home/darshan/bin/run-noteworthy-site
+Type=forking
+PIDFile=/home/darshan/noteworthytuner.com/run/pid
+ExecStart=/usr/bin/sudo -i -u darshan /home/darshan/bin/restart-noteworthy-site
+ExecStop=/usr/bin/sudo -i -u darshan /home/darshan/bin/stop-noteworthy-site
 
 [Install]
 WantedBy=multi-user.target
