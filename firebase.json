@@ -1,0 +1,18 @@
+{
+  "hosting": {
+      "public": "static",
+      "redirects": [ {
+          "source": "/faq",
+          "destination": "https://github.com/darshan-/Noteworthy-Tuner-Support/blob/master/FAQ.wiki",
+          "type": 302
+      }, {
+          "source": "/changelog",
+          "destination": "https://github.com/darshan-/Noteworthy-Tuner-Support/blob/master/Changelog.md",
+          "type": 302
+      }, {
+          "source": "/sourcecode",
+          "destination": "https://github.com/darshan-/Noteworthy-Tuner-Support/blob/master/SourceCode.md",
+          "type": 302
+      }]
+  }
+}
